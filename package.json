@@ -9,6 +9,7 @@
     "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}' --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "npm run lint:fix && prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "preview": "vite preview",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
@@ -51,8 +52,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' --report-unused-disable-directives --max-warnings 0",
-      "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+      "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' --report-unused-disable-directives --max-warnings 0"
     ]
   }
 }
