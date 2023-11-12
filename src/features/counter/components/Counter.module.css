@@ -1,0 +1,16 @@
+.module {
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+}
+
+.link {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+}
+
+.button {
+    background-color: #535bf2;
+    color: white;
+}
