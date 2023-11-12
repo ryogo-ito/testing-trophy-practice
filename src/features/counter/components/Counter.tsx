@@ -6,7 +6,6 @@ import reactLogo from '../../../assets/react.svg';
 
 import styles from './Counter.module.css';
 
-
 export function Counter() {
   // TODO リフトアップするか考える
   const [count, setCount] = useState(0);
