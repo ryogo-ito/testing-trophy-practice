@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { Button } from '@/components/Elements/Button';
+
 import reactLogo from '../../../assets/react.svg';
 
 import styles from './Counter.module.css';
@@ -14,9 +16,7 @@ export function Counter() {
         <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
       <h1>Counter Feature</h1>
-      <button onClick={() => setCount((prevCount) => prevCount + 1)} className={styles.button}>
-        count is {count}
-      </button>
+      <Button onClick={() => setCount((prevCount) => prevCount + 1)}>count is {count}</Button>
     </div>
   );
 }

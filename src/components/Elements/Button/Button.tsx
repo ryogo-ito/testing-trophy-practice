@@ -16,9 +16,9 @@ const variants = {
 };
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: string;
-  size: keyof typeof sizes;
-  variant: keyof typeof variants;
+  children: React.ReactNode;
+  size?: keyof typeof sizes;
+  variant?: keyof typeof variants;
   className?: string;
 }
 
