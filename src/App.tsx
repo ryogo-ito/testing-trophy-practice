@@ -1,4 +1,4 @@
-import { Counter } from './features/counter/components/Counter.tsx';
+import { Counter } from '@/features/counter';
 
 function App() {
   return (
